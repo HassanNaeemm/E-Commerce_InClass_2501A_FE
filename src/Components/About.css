@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.about-page {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+
+.about-hero {
+  height: 350px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 55px;
+  margin: 0;
+}
+
+.about-hero p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  gap: 50px;
+  padding: 80px 10%;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-text button {
+  margin-top: 15px;
+  padding: 13px 28px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.about-text button:hover {
+  background: #333;
+}
+
+/* Mission */
+.mission {
+  background: #f5f5f5;
+  padding: 70px 8%;
+
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.mission-box {
+  background: white;
+  padding: 35px;
+  text-align: center;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mission-box h2 {
+  margin-bottom: 15px;
+}
+
+.mission-box p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Bottom */
+.about-bottom {
+  text-align: center;
+  padding: 70px 20px;
+  background: black;
+  color: white;
+}
+
+.about-bottom h2 {
+  font-size: 35px;
+}
+
+.about-bottom p {
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    padding: 50px 6%;
+  }
+
+  .mission {
+    flex-direction: column;
+    padding: 50px 6%;
+  }
+
+}
+
