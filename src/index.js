@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <GoogleOAuthProvider clientId={"100800983443-e8co0t0kpv2109csp67darh7vcldlq3t.apps.googleusercontent.com"}>
     <App />
-  </React.StrictMode>
+  </GoogleOAuthProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
